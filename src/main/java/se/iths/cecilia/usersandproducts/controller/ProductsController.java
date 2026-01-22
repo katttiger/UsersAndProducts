@@ -9,7 +9,7 @@ import java.util.List;
 
 @Controller
 public class ProductsController {
-    @GetMapping
+    @GetMapping("/product")
     public String productList(Model model) {
         List<Product> products = List.of(
                 new Product("Kläder", 100.0F, "Vit tröja"),
