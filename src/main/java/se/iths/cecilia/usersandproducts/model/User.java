@@ -1,4 +1,4 @@
-package models;
+package se.iths.cecilia.usersandproducts.model;
 
 public class User {
     private int id;
