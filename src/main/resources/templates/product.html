@@ -6,8 +6,10 @@
 </head>
 <body>
 <h1>Producter</h1>
-<ul>
-    <li th:each="product : ${products}" th:text="${product}">Products</li>
+<ul th:each="product : ${product}">
+    <li th:text="${product.getTitle()}">Products</li>
+    <li th:text="${product.getPrice()}">Products</li>
+    <li th:text="${product.getName()}">Products</li>
 </ul>
 </body>
 </html>
